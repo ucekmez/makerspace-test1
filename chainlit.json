@@ -1,0 +1,25 @@
+{
+  "name": "Chainlit GPT-4o-mini Chatbot",
+  "description": "A chatbot powered by OpenAI's GPT-4o-mini model",
+  "theme": {
+    "primaryColor": "#4F46E5"
+  },
+  "ui": {
+    "layout": "chat",
+    "features": {
+      "chat_history": true,
+      "enable_llm_responses": true
+    }
+  },
+  "project": {
+    "public": true,
+    "server": {
+      "cors": {
+        "origins": ["*"],
+        "allow_credentials": true
+      }
+    }
+  },
+  "host": "0.0.0.0",
+  "port": 7860
+} 

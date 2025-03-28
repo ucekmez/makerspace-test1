@@ -1,0 +1,3 @@
+# https://huggingface.co/docs/hub/spaces-sdks-docker
+runtime: docker
+sdk: docker 

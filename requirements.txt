@@ -1,0 +1,5 @@
+chainlit
+openai
+python-dotenv
+loguru
+websockets

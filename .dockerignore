@@ -1,0 +1,23 @@
+# Version control
+.git
+.gitignore
+
+# Environment files
+.env
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Other
+README.md
+.cursorrules 
