@@ -45,14 +45,17 @@ os.environ["CHAINLIT_PORT"] = "7860"
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
 
 # Updated system template to be more conversational and less strict on formatting
-system_template = """You are a helpful assistant. Use the following context to answer the user's question accurately. 
+system_template = """
+You are a helpful assistant. 
+Use the following context to answer the user's question accurately. 
 If the context doesn't contain the answer, say you don't know. 
-Refer to the source documents when possible.
+Refer to the source documents when possible. Always respond in max 3 sentences.
+
 Context:
 {context}
 
 User Question: {question}
-Answer:"""
+Answer:""".strip()
 
 # Using Langchain Core message types for prompt template construction
 prompt = ChatPromptTemplate.from_messages(
