@@ -393,7 +393,7 @@ async def on_message(message: cl.Message):
                 max_tokens=800, 
                 stream=True
             )
-             for chunk in stream: 
+            for chunk in stream: 
                 if chunk.choices[0].delta.content is not None:
                     content = chunk.choices[0].delta.content
                     full_response += content
