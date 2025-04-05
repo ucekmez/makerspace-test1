@@ -3,3 +3,10 @@ openai
 python-dotenv
 loguru
 websockets
+
+# RAG Dependencies
+langchain
+langchain-openai
+chromadb
+pypdf
+tiktoken
